@@ -12,14 +12,14 @@ public class InstanciationDynamique {
         String calcul = sc.nextLine();
         Class obj = Class.forName(calcul);
         ICalcul cal = (ICalcul) obj.getConstructor().newInstance();
-        System.out.println(cal.getVlue());
+        System.out.println(cal.getValue());
 
         String gestion = sc.nextLine();
         Class obj2 = Class.forName(gestion);
         ICalcul cal2 = (ICalcul) obj2.getConstructor().newInstance();
         Method meth = obj2.getMethod("setCal", ICalcul.class);
         meth.invoke(cal2, cal);
-        System.out.println(cal2.getVlue());
+        System.out.println(cal2.getValue());
 
     }
 }

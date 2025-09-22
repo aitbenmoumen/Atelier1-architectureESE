@@ -2,7 +2,7 @@ package DAO;
 
 public class CalculV2 implements ICalcul {
     @Override
-    public double getVlue() {
+    public double getValue() {
         return 150;
     }
 }
