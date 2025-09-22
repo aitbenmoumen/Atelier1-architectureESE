@@ -8,4 +8,7 @@ public class Gestion implements  IGestion{
     public double getVlue() {
         return 0;
     }
+    public void setCalcul(ICalcul calcul) {
+        this.calcul = calcul;
+    }
 }
