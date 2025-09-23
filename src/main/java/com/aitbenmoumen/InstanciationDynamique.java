@@ -1,6 +1,7 @@
 package com.aitbenmoumen;
 
 import DAO.ICalcul;
+import Metier.IGestion;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -16,10 +17,11 @@ public class InstanciationDynamique {
 
         String gestion = sc.nextLine();
         Class obj2 = Class.forName(gestion);
-        ICalcul cal2 = (ICalcul) obj2.getConstructor().newInstance();
-        Method meth = obj2.getMethod("setCal", ICalcul.class);
+        IGestion cal2 = (IGestion) obj2.getConstructor().newInstance();
+        // Method meth = obj2.getMethod("setCal", ICalcul.class);
+        Method meth = obj2.getMethod("setCalcul", ICalcul.class);
         meth.invoke(cal2, cal);
-        System.out.println(cal2.getValue());
+        System.out.println(cal2.getVlue());
 
     }
 }
