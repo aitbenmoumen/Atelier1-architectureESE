@@ -21,7 +21,7 @@ public class InstanciationDynamique {
         // Method meth = obj2.getMethod("setCal", ICalcul.class);
         Method meth = obj2.getMethod("setCalcul", ICalcul.class);
         meth.invoke(cal2, cal);
-        System.out.println(cal2.getVlue());
+        System.out.println(cal2.calcule());
 
     }
 }

@@ -12,6 +12,6 @@ public class SpringXml {
         ICalcul cal = (ICalcul) context.getBean(ICalcul.class);
         System.out.println(cal.getValue());
         IGestion gest = (IGestion) context.getBean(IGestion.class);
-        System.out.println(gest.getVlue());
+        System.out.println(gest.calcule());
     }
 }

@@ -12,13 +12,13 @@ public class InstanciationStatique {
 
         Gestion gestion = new Gestion();
         gestion.setCalcul(calcul);
-        System.out.println(gestion.getVlue());
+        System.out.println(gestion.calcule());
 
         System.out.println("----------------------------------------");
 
         ICalcul calcul2 = new CalculV2();
         System.out.println(calcul2.getValue());
         gestion.setCalcul(calcul2);
-        System.out.println(gestion.getVlue());
+        System.out.println(gestion.calcule());
     }
 }
