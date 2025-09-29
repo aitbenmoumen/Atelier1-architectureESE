@@ -1,4 +1,7 @@
 package DAO;
+import org.springframework.stereotype.Component;
+
+
 
 public class CalculV1 implements ICalcul {
     @Override
